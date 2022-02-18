@@ -1,0 +1,16 @@
+@import 'reset';
+
+
+
+@media screen and (max-width: 768px){
+@import 'mobilegrid';
+}
+
+
+@media screen and (min-width: 769px) and (max-width:1024px){
+    @import 'tabletlayout';
+}
+
+@media screen and(min-width: 1025px){
+    @import 'desktop';
+}

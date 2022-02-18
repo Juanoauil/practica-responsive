@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+// Header
+
+header{
+    letter-spacing: 1rem;
+    padding: 10px 0;
+    background-color: #000;
+    color: aliceblue;
+    min-width: 100%;
+    text-align: center;
+
+    h1:hover{
+        color: red;
+    }
+
+}
+
+// Nav
+
+nav{
+    background-color: coral;
+    color: #000;
+    min-width: 100%;
+    padding: 15px 0;
+
+    ul{
+        
+        display: flex;
+        justify-content: space-around;
+
+        li a{
+            color: #000;
+        }
+    }
+}
+
+// Section
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    article{
+        border: .5px solid blue;
+        padding: 8px;
+        margin: 5px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 25px;
+        width: 48%;
+        background-color: #ccc;
+    }
+}
+
+// Aside
+
+aside div{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'pic1 pic2'
+    'pic3 pic3';
+    gap: 20px;
+    margin-top: 15px;
+
+
+    .pic1{
+        grid-area: pic1;
+    }
+
+    .pic2{
+        grid-area: pic2;
+    }
+
+    .pic3{
+        grid-area: pic3;
+        
+        div img{
+                width: 660px;
+        }
+    }
+}
+
+// Footer
+
+footer{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
